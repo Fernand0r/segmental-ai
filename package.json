@@ -1,55 +1,27 @@
 {
-  "name": "ai-indexer-website",
-  "version": "1.0.0",
-  "description": "Modern, maintainable website for AI-powered data indexing solutions",
-  "main": "index.html",
+  "name": "segmental-ai",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "start": "npx serve .",
-    "dev": "npx serve . --live",
-    "build": "npm run build:css && npm run build:js",
-    "build:css": "postcss assets/css/*.css --use autoprefixer cssnano -d dist/css/",
-    "build:js": "terser assets/js/main.js -o dist/js/main.min.js",
-    "lint": "npm run lint:css && npm run lint:js",
-    "lint:css": "stylelint assets/css/*.css",
-    "lint:js": "eslint assets/js/*.js",
-    "test": "echo \"No tests specified\" && exit 0",
-    "optimize:images": "imagemin assets/images/* --out-dir=dist/images"
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "keywords": [
-    "ai",
-    "indexing",
-    "data",
-    "search",
-    "website",
-    "responsive",
-    "modern"
-  ],
-  "author": "AI Indexer Team",
-  "license": "MIT",
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "next": "15.1.8"
+  },
   "devDependencies": {
-    "autoprefixer": "^10.4.16",
-    "cssnano": "^6.0.2",
-    "eslint": "^8.55.0",
-    "imagemin": "^8.0.1",
-    "imagemin-webp": "^8.0.0",
-    "postcss": "^8.4.32",
-    "postcss-cli": "^11.0.0",
-    "serve": "^14.2.1",
-    "stylelint": "^16.0.2",
-    "terser": "^5.26.0"
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead",
-    "not ie 11"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/your-org/ai-indexer-website"
-  },
-  "bugs": {
-    "url": "https://github.com/your-org/ai-indexer-website/issues"
-  },
-  "homepage": "https://indexer.ai"
-} 
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.8",
+    "@eslint/eslintrc": "^3"
+  }
+}

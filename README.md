@@ -1,263 +1,160 @@
-# AI Indexer - Optimized Project Structure
+# AI Indexer | Smart Data Solutions
 
-A modern, maintainable website for AI-powered data indexing solutions with clean separation of concerns and scalable architecture.
+A modern, responsive website for AI-powered data indexing and management solutions built with Next.js.
 
-## 🚀 Project Structure
+## 🚀 Features
+
+- **Lightning Fast**: Process thousands of documents in seconds with optimized AI pipeline
+- **Enterprise Security**: Bank-grade security with end-to-end encryption and compliance certifications
+- **Smart Analytics**: Real-time insights and performance analytics for data-driven decisions
+- **Responsive Design**: Fully responsive design that works on all devices
+- **Modern UI**: Beautiful, modern interface with smooth animations and transitions
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 15.1.8 with TypeScript
+- **Styling**: Custom CSS with CSS variables for theming
+- **Icons**: Font Awesome 6.4.2
+- **Images**: Next.js Image optimization
+- **Fonts**: Inter font family from Google Fonts
+
+## 📁 Project Structure
 
 ```
-segmental-ai/
-├── index.html                 # Main HTML file
-├── assets/
-│   ├── css/
-│   │   ├── variables.css      # CSS custom properties and design tokens
-│   │   ├── base.css          # Base styles, resets, and typography
-│   │   ├── components.css    # Reusable UI components
-│   │   ├── layout.css        # Layout styles for sections
-│   │   └── animations.css    # Animations and keyframes
-│   ├── js/
-│   │   └── main.js          # Main JavaScript functionality
-│   └── images/
-│       └── logo.svg         # Logo and image assets
-├── public/
-│   └── images/
-│       └── logo.svg
-├── README.md
-└── package.json             # Project dependencies (optional)
+src/
+  app/
+    globals.css          # Global styles and CSS variables
+    layout.tsx           # Root layout with metadata and Font Awesome
+    page.tsx             # Main page component with all sections
+  components/
+    Header.tsx           # Navigation header
+    Hero.tsx             # Hero section with features showcase
+    Problems.tsx         # Problems/challenges section
+    Solution.tsx         # Solutions section with cards and metrics
+    Contact.tsx          # Contact section with form
+    Footer.tsx           # Footer with links and social media
+public/
+  images/
+    logo.svg            # Company logo
 ```
 
-## 🎯 Key Improvements
-
-### 1. **Modular CSS Architecture**
-- **Variables**: Centralized design tokens for easy theming
-- **Base**: Global styles, resets, and typography
-- **Components**: Reusable UI elements (buttons, forms, cards)
-- **Layout**: Section-specific styles
-- **Animations**: All animation and transition effects
-
-### 2. **Enhanced JavaScript**
-- Modular, well-documented functions
-- Performance optimizations
-- Accessibility features
-- Error handling
-- Mobile-first responsive design
-
-### 3. **Improved Performance**
-- Separated CSS files for better caching
-- Lazy loading for images
-- Optimized animations
-- Preloading critical resources
-
-### 4. **Better Maintainability**
-- Clear separation of concerns
-- Consistent naming conventions
-- Documented code structure
-- Scalable file organization
-
-## 📱 Features
-
-### Core Functionality
-- ✅ Responsive design (mobile-first)
-- ✅ Smooth scrolling navigation
-- ✅ Scroll-based animations
-- ✅ Form validation and submission
-- ✅ Mobile menu with hamburger toggle
-- ✅ Scroll-to-top button
-- ✅ Notification system
-- ✅ Accessibility features
-
-### Performance & UX
-- ✅ Lazy loading for images
-- ✅ Optimized animations
-- ✅ Keyboard navigation support
-- ✅ Screen reader compatibility
-- ✅ Reduced motion support
-- ✅ Error handling
-
-## 🛠️ Development Setup
+## 🚀 Getting Started
 
 ### Prerequisites
-- Modern web browser
-- Text editor or IDE
-- Local web server (optional)
 
-### Getting Started
+- Node.js 18.0 or later
+- npm or yarn package manager
 
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd segmental-ai
-   ```
+### Installation
 
-2. **Open in browser**
-   - Open `index.html` directly in a browser, or
-   - Use a local development server:
-   ```bash
-   # Using Python
-   python -m http.server 8000
-   
-   # Using Node.js
-   npx serve .
-   
-   # Using PHP
-   php -S localhost:8000
-   ```
-
-3. **Start developing**
-   - Edit HTML in `index.html`
-   - Modify styles in `assets/css/` files
-   - Add JavaScript functionality in `assets/js/main.js`
-
-## 🎨 Customization
-
-### Colors and Theming
-Edit `assets/css/variables.css` to customize the design:
-
-```css
-:root {
-  --primary: #3b82f6;        /* Primary brand color */
-  --primary-dark: #2563eb;   /* Darker variant */
-  --secondary: #06b6d4;      /* Secondary accent */
-  /* ... other variables */
-}
-```
-
-### Typography
-Modify font settings in `assets/css/variables.css`:
-
-```css
-:root {
-  --font-family: 'Inter', sans-serif;
-  --font-size-base: 16px;
-  --font-weight-normal: 400;
-  /* ... other typography tokens */
-}
-```
-
-### Layout and Spacing
-Adjust spacing system in `assets/css/variables.css`:
-
-```css
-:root {
-  --spacing-xs: 4px;
-  --spacing-sm: 8px;
-  --spacing-md: 16px;
-  /* ... other spacing values */
-}
-```
-
-## 📊 Browser Support
-
-- ✅ Chrome 60+
-- ✅ Firefox 60+
-- ✅ Safari 12+
-- ✅ Edge 79+
-- ✅ Mobile browsers (iOS Safari, Chrome Mobile)
-
-## 🔧 Build Process (Optional)
-
-For production deployment, consider adding:
-
-### CSS Optimization
+1. Clone the repository:
 ```bash
-# Install dependencies
-npm install -g postcss-cli autoprefixer cssnano
-
-# Process CSS
-postcss assets/css/*.css --use autoprefixer cssnano -d dist/css/
+git clone <repository-url>
+cd segmental-ai
 ```
 
-### JavaScript Optimization
+2. Install dependencies:
 ```bash
-# Install dependencies
-npm install -g terser
-
-# Minify JavaScript
-terser assets/js/main.js -o dist/js/main.min.js
+npm install
 ```
 
-### Image Optimization
-- Compress images using tools like ImageOptim, TinyPNG, or Squoosh
-- Use WebP format for better compression
-- Implement responsive images with `srcset`
-
-## 📈 Performance Checklist
-
-- [x] Minified CSS and JavaScript
-- [x] Optimized images
-- [x] Lazy loading implemented
-- [x] Critical resources preloaded
-- [x] Efficient animations
-- [x] Reduced HTTP requests
-- [x] Gzip compression (server-side)
-- [x] Browser caching headers
-
-## ♿ Accessibility Features
-
-- [x] Semantic HTML structure
-- [x] ARIA labels and roles
-- [x] Keyboard navigation
-- [x] Focus indicators
-- [x] Screen reader support
-- [x] Color contrast compliance
-- [x] Reduced motion support
-- [x] Skip navigation links
-
-## 🔍 SEO Optimization
-
-### Meta Tags
-Add to `<head>` section:
-```html
-<meta name="description" content="AI-powered data indexing solutions">
-<meta name="keywords" content="AI, data, indexing, search, analytics">
-<meta property="og:title" content="AI Indexer">
-<meta property="og:description" content="Transform your data with AI">
+3. Start the development server:
+```bash
+npm run dev
 ```
 
-### Structured Data
-Consider adding JSON-LD structured data for better search visibility.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## 📝 Content Management
+## 📝 Available Scripts
 
-### Adding New Sections
-1. Add HTML structure to `index.html`
-2. Create corresponding styles in `assets/css/layout.css`
-3. Add any interactive behavior to `assets/js/main.js`
+- `npm run dev` - Start development server with Turbopack
+- `npm run build` - Build the application for production
+- `npm run start` - Start the production server
+- `npm run lint` - Run ESLint for code quality
 
-### Updating Content
-- Text content: Edit directly in `index.html`
-- Images: Add to `assets/images/` and update references
-- Styling: Modify appropriate CSS files
+## 🎨 Features & Sections
 
-## 🚀 Deployment
+### Header
+- Fixed navigation with logo
+- Responsive navigation links
+- Call-to-action button
 
-### Static Hosting
-Deploy to platforms like:
-- Netlify
-- Vercel
-- GitHub Pages
-- AWS S3 + CloudFront
+### Hero Section
+- Animated background with floating elements
+- Feature cards with icons
+- Showcase image with statistics overlay
+- Smooth scroll animations
 
-### CDN Integration
-Consider using CDN for:
-- External libraries (Font Awesome, Google Fonts)
-- Image assets
-- CSS and JavaScript files
+### Problems Section
+- Interactive problem cards
+- Hover effects and animations
+- Statistics display
 
-## 🐛 Troubleshooting
+### Solution Section
+- Six solution feature cards
+- Two-column content showcase
+- Performance metrics
+- Feature comparison grid
 
-### Common Issues
+### Contact Section
+- Contact information cards
+- Interactive contact form
+- Business details and features
 
-1. **CSS not loading**
-   - Check file paths in `index.html`
-   - Verify server configuration
+### Footer
+- Company information
+- Navigation links
+- Social media links
+- Copyright information
 
-2. **JavaScript errors**
-   - Check browser console for errors
-   - Ensure all dependencies are loaded
+## 🎯 Key Features
 
-3. **Mobile layout issues**
-   - Test on actual devices
-   - Use browser dev tools for responsive testing
+- **Smooth Scroll Navigation**: Automatic smooth scrolling to sections
+- **Scroll Animations**: Elements fade in as they come into view
+- **Responsive Design**: Mobile-first approach with breakpoints
+- **Interactive Elements**: Hover effects and transitions
+- **Form Handling**: Contact form with validation
+- **SEO Optimized**: Proper meta tags and semantic HTML
+
+## 🔧 Customization
+
+### Colors
+Edit the CSS variables in `src/app/globals.css`:
+```css
+:root {
+  --primary: #3b82f6;
+  --secondary: #06b6d4;
+  --success: #10b981;
+  /* ... more variables */
+}
+```
+
+### Content
+- Update company information in components
+- Replace placeholder images with your own
+- Modify contact details in the Contact component
+- Update social media links in the Footer
+
+## 📱 Responsive Breakpoints
+
+- Mobile: 768px and below
+- Tablet: 992px and below
+- Desktop: 992px and above
+
+## 🌐 Deployment
+
+### Vercel (Recommended)
+```bash
+npm run build
+```
+Deploy to Vercel or your preferred hosting platform.
+
+### Environment Variables
+No environment variables required for the current setup.
+
+## 📄 License
+
+This project is licensed under the MIT License.
 
 ## 🤝 Contributing
 
@@ -267,12 +164,13 @@ Consider using CDN for:
 4. Test thoroughly
 5. Submit a pull request
 
-## 📄 License
-
-[MIT License](LICENSE)
-
 ## 📞 Support
 
-For questions or support, please contact:
+For support and questions:
 - Email: info@indexer.ai
-- Phone: (415) 555-0123 
+- Phone: (415) 555-0123
+- Address: 1234 Innovation Drive, San Francisco, CA 94103
+
+---
+
+Built with ❤️ using Next.js and modern web technologies.
