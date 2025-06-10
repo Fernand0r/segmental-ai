@@ -9,11 +9,11 @@ export default function Hero() {
 
 			<div className="container">
 				<div className="hero-content fade-in-up">
-					<h1>Universal Data <br />Indexing Engine</h1>
-					<p>
-						Transform your data with intelligent AI-powered processing.
-						Unlock insights from any document format with enterprise-grade accuracy and speed.
-					</p>
+					<h1>
+						Universal Data <br />
+						Indexing Engine
+					</h1>
+					<p>Transform your data with intelligent AI-powered processing. Unlock insights from any document format with enterprise-grade accuracy and speed.</p>
 				</div>
 
 				<div className="hero-features fade-in-up delay-1">
@@ -45,6 +45,10 @@ export default function Hero() {
 						<Image src="/images/iMac.jpg" alt="AI Document Processing Dashboard" width={900} height={800} />
 						<div className="hero-stats">
 							<div className="hero-stat">
+								<span className="hero-stat-number">800+</span>
+								<span className="hero-stat-label">Enterprise Clients</span>
+							</div>
+							<div className="hero-stat">
 								<span className="hero-stat-number">40M+</span>
 								<span className="hero-stat-label">Documents</span>
 							</div>
@@ -55,10 +59,6 @@ export default function Hero() {
 							<div className="hero-stat">
 								<span className="hero-stat-number">95%+</span>
 								<span className="hero-stat-label">Coverage</span>
-							</div>
-							<div className="hero-stat">
-								<span className="hero-stat-number">10x</span>
-								<span className="hero-stat-label">Faster</span>
 							</div>
 						</div>
 					</div>

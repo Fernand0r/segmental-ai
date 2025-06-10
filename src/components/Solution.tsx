@@ -57,12 +57,14 @@ export default function Solution() {
 
 				<div className="solution-metrics">
 					<div className="solution-metric">
-						<span className="solution-metric-number">800+</span>
-						<span className="solution-metric-label">Enterprise Clients</span>
+						<span className="solution-metric-number">2min</span>
+						<span className="solution-metric-label" style={{ fontSize: '0.7rem' }}>
+							Time to process one complex document
+						</span>
 					</div>
 					<div className="solution-metric">
 						<span className="solution-metric-number">80%+</span>
-						<span className="solution-metric-label">Cost Reduction</span>
+						<span className="solution-metric-label">Time Saved</span>
 					</div>
 					<div className="solution-metric">
 						<span className="solution-metric-number">95%+</span>

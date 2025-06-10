@@ -12,6 +12,10 @@
   --bg-darker: #0f172a;
   --card-bg: #1e293b;
   --border-color: #334155;
+  --problem-primary: #ef4444;
+  --problem-secondary: #f97316;
+  --problem-tertiary: #f59e0b;
+  --problem-danger: #dc2626;
 }
 
 * {
@@ -440,12 +444,12 @@ section {
   background:
     radial-gradient(
       circle at 30% 50%,
-      rgba(59, 130, 246, 0.1) 0%,
+      rgba(239, 68, 68, 0.1) 0%,
       transparent 50%
     ),
     radial-gradient(
       circle at 70% 80%,
-      rgba(6, 182, 212, 0.08) 0%,
+      rgba(249, 115, 22, 0.08) 0%,
       transparent 50%
     );
   z-index: 1;
@@ -482,7 +486,7 @@ section {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  background: linear-gradient(90deg, var(--problem-primary), var(--problem-secondary));
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.4s ease;
@@ -495,20 +499,20 @@ section {
 .problem-card:hover {
   transform: translateY(-12px);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
-  border-color: var(--primary);
+  border-color: var(--problem-primary);
 }
 
 .problem-icon {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  background: linear-gradient(135deg, var(--problem-primary), var(--problem-secondary));
   border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 24px;
   position: relative;
-  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 8px 20px rgba(239, 68, 68, 0.3);
 }
 
 .problem-icon::after {
@@ -522,7 +526,7 @@ section {
 
 .problem-card i {
   font-size: 32px;
-  color: var(--primary);
+  color: var(--problem-primary);
   position: relative;
   z-index: 2;
 }
@@ -542,6 +546,37 @@ section {
   margin-bottom: 0;
 }
 
+/* Corner ribbon styles */
+.corner-ribbon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+  padding: 8px 24px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transform: rotate(45deg) translate(25%, -25%);
+  transform-origin: center;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+  z-index: 10;
+  min-width: 100px;
+  text-align: center;
+}
+
+.corner-ribbon::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background: linear-gradient(135deg, #059669, #047857);
+  transform: translateY(-2px);
+}
+
 .problem-stats {
   display: flex;
   justify-content: center;
@@ -558,7 +593,7 @@ section {
 .stat-number {
   font-size: 48px;
   font-weight: 800;
-  color: var(--primary);
+  color: var(--problem-danger);
   display: block;
   line-height: 1;
   margin-bottom: 8px;
