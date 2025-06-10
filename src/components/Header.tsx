@@ -7,8 +7,8 @@ export default function Header() {
         <nav className="nav">
           <div className="logo">
             <Image
-              width={100}
-              height={40}
+              width={150}
+              height={150}
               src="/images/logo.svg"
               alt="GenII"
             />
@@ -18,7 +18,6 @@ export default function Header() {
             <a href="#solution">Solution</a>
             <a href="#contact">Contact</a>
           </div>
-          <a href="#contact" className="btn">Get Started</a>
         </nav>
       </div>
     </header>
