@@ -33,9 +33,14 @@ src/
     Solution.tsx         # Solutions section with cards and metrics
     Contact.tsx          # Contact section with form
     Footer.tsx           # Footer with links and social media
+    LogoWithTexts.tsx    # Logo with texts
 public/
   images/
-    logo.svg            # Company logo
+    logo-segmental.svg  # Segmental logo
+    logo-codifii.svg    # Codifii logo
+    favicon-segmental.png # Segmental favicon
+    favicon-codifii.png # Codifii favicon
+    favicon-codifii-white.png # Codifii favicon (white)
 ```
 
 ## 🚀 Getting Started
@@ -104,8 +109,8 @@ npm run dev
 ### Footer
 - Company information
 - Navigation links
-- Social media links
 - Copyright information
+- Logo with texts
 
 ## 🎯 Key Features
 
@@ -150,7 +155,7 @@ npm run build
 Deploy to Vercel or your preferred hosting platform.
 
 ### Environment Variables
-No environment variables required for the current setup.
+- `NEXT_PUBLIC_BRAND`: `segmental` or `codifii`
 
 ## 📄 License
 
@@ -163,13 +168,6 @@ This project is licensed under the MIT License.
 3. Make your changes
 4. Test thoroughly
 5. Submit a pull request
-
-## 📞 Support
-
-For support and questions:
-- Email: info@indexer.ai
-- Phone: (415) 555-0123
-- Address: 1234 Innovation Drive, San Francisco, CA 94103
 
 ---
 
