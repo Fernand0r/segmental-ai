@@ -1,5 +1,7 @@
 'use client'
 
+const brand = process.env.NEXT_PUBLIC_BRAND ?? 'segmental'
+
 export default function Contact() {
 	return (
 		<section id="contact" className="contact">
@@ -18,7 +20,9 @@ export default function Contact() {
 						<h3>Email Us</h3>
 
 						<div className="contact-email">
-							<a href="mailto:sales@segmental.ai">sales@segmental.ai</a>
+							<a href={`mailto:${brand === 'segmental' ? 'sales@segmental.ai' : 'info@codifii.ai'}`}>
+								{brand === 'segmental' ? 'sales@segmental.ai' : 'info@codifii.ai'}
+							</a>
 						</div>
 
 						<p className="response-time">Response within 24 hours</p>
