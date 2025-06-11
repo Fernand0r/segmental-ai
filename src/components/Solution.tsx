@@ -7,7 +7,7 @@ export default function Solution() {
 				<div className="section-header">
 					<h2>Intelligent LLMs for Data Transformation</h2>
 					<p>
-						Moonshot&apos;s De-LLM solution optimizes how you leverage large language models for unstructured data processing, delivering superior performance
+						Segmental&apos;s De-LLM solution optimizes how you leverage large language models for unstructured data processing, delivering superior performance
 						at reduced costs.
 					</p>
 				</div>
