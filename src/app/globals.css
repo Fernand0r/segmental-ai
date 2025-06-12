@@ -1394,6 +1394,24 @@ img {
   .section-header h2 {
     font-size: 36px;
   }
+
+  .problem-cards {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+
+  .problem-card {
+    padding: 35px 28px;
+  }
+
+  .solution-cards {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+
+  .solution-card {
+    padding: 35px 28px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1450,16 +1468,25 @@ img {
   }
 
   .hero-stats {
-    padding: 15px;
-    gap: 15px;
+    padding: 15px 10px;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-stat {
+    flex: 1;
+    min-width: calc(50% - 8px);
+    margin-bottom: 8px;
   }
 
   .hero-stat-number {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .hero-stat-label {
-    font-size: 11px;
+    font-size: 10px;
+    line-height: 1.2;
   }
 
   .contact-cards {
@@ -1509,15 +1536,145 @@ img {
     font-size: 32px;
   }
 
+  .problem-cards {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-top: 40px;
+  }
+
+  .problem-card {
+    padding: 30px 25px;
+  }
+
+  .problem-card h3 {
+    font-size: 20px;
+  }
+
+  .problem-card p {
+    font-size: 14px;
+  }
+
+  .problem-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+  }
+
+  .problem-card i {
+    font-size: 24px;
+  }
+
+  .corner-ribbon {
+    padding: 6px 20px;
+    font-size: 11px;
+    min-width: 80px;
+  }
+
   .problem-stats {
     flex-direction: column;
     gap: 30px;
+    margin-top: 40px;
+    padding: 30px 0;
   }
 
   .stat-item {
-    padding: 20px;
-    background: var(--card-bg);
+    text-align: center;
+  }
+
+  .stat-number {
+    font-size: 36px;
+  }
+
+  .stat-label {
+    font-size: 12px;
+  }
+
+  .solution-metrics {
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+    padding: 30px 0;
+  }
+
+  .solution-metric-number {
+    font-size: 36px;
+  }
+
+  .solution-metric-label {
+    font-size: 12px;
+  }
+}
+
+/* Extra small devices (phones in portrait) */
+@media (max-width: 480px) {
+  .hero-showcase {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .hero-main-image {
+    border-radius: 16px;
+  }
+
+  .hero-stats {
+    padding: 12px 8px;
+    gap: 6px;
     border-radius: 12px;
-    border: 1px solid var(--border-color);
+  }
+
+  .hero-stat {
+    min-width: calc(50% - 6px);
+  }
+
+  .hero-stat-number {
+    font-size: 16px;
+  }
+
+  .hero-stat-label {
+    font-size: 9px;
+  }
+
+  .hero-main-image img {
+    height: 200px;
+  }
+
+  .problem-stats {
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+    padding: 20px 0;
+  }
+
+  .stat-item {
+    flex: 1;
+    min-width: calc(50% - 10px);
+  }
+
+  .stat-number {
+    font-size: 28px;
+  }
+
+  .stat-label {
+    font-size: 11px;
+  }
+
+  .solution-metrics {
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+    padding: 20px 0;
+  }
+
+  .solution-metric {
+    flex: 1;
+    min-width: calc(50% - 10px);
+  }
+
+  .solution-metric-number {
+    font-size: 28px;
+  }
+
+  .solution-metric-label {
+    font-size: 11px;
   }
 }
