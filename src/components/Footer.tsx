@@ -1,4 +1,4 @@
-import LogoWithTexts from './LogoWithTexts'
+import Image from 'next/image'
 
 const brand = process.env.NEXT_PUBLIC_BRAND ?? 'segmental'
 
@@ -19,7 +19,7 @@ export default function Footer() {
 					}}
 				>
 					<div className="footer-logo" style={{ marginBottom: '5px' }}>
-						<LogoWithTexts />
+						<Image width={150} height={150} src={`/images/logo-${brand}.svg`} alt={brand} />
 					</div>
 					<div className="footer-copyright">
 						<p>&copy; {brand.charAt(0).toUpperCase() + brand.slice(1)} AI Inc, 2025. All rights reserved.</p>
