@@ -6,6 +6,7 @@ const fs = require('fs')
 const path = require('path')
 
 const dir = path.join(__dirname)
+process.env.NEXT_TELEMETRY_DISABLED = '1';
 
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev, dir })
