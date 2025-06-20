@@ -38,7 +38,7 @@ export default function Contact() {
 						</div>
 
 						<div className="contact-button">
-							<a href="mailto:sales@segmental.ai" className="email-button">
+							<a href={`mailto:${brand === 'segmental' ? 'sales@segmental.ai' : 'info@codifii.ai'}`} className="email-button">
 								<i className="fas fa-paper-plane"></i>
 								<span>Send Message</span>
 							</a>

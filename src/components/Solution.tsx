@@ -1,5 +1,7 @@
 import Image from 'next/image'
 
+const brand = process.env.NEXT_PUBLIC_BRAND ?? 'segmental'
+
 export default function Solution() {
 	return (
 		<section id="solution" className="solution">
@@ -7,7 +9,7 @@ export default function Solution() {
 				<div className="section-header">
 					<h2>Intelligent LLMs for Data Transformation</h2>
 					<p>
-						Segmental&apos;s De-LLM solution optimizes how you leverage large language models for unstructured data processing, delivering superior performance
+						{brand === 'segmental' ? 'Segmental' : 'Codifii'}&apos;s De-LLM solution optimizes how you leverage large language models for unstructured data processing, delivering superior performance
 						at reduced costs.
 					</p>
 				</div>
@@ -45,7 +47,7 @@ export default function Solution() {
 					</div>
 				</div>
 
-				<div className="solution-cta" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '20px' }}>
+				<div className="solution-cta">
 					<div className="solution-card fade-in-up delay-2">
 						<div className="solution-icon">
 							<i className="fas fa-robot"></i>

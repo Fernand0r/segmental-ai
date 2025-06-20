@@ -11,6 +11,7 @@ export default function Header() {
 					<div className="nav-links">
 						<a href="#problems">Problems</a>
 						<a href="#solution">Solution</a>
+						<a href="#user-story">User Story</a>
 						<a href="#contact">Contact</a>
 					</div>
 				</nav>
